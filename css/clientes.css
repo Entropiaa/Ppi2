@@ -1,0 +1,27 @@
+body{
+    font-family: JetBrains Mono;
+    margin: 0;
+}
+#navbar{
+    background-color: #ffd502;
+}
+#contact{
+    background-color: #ffd502;
+    color: black;
+}
+
+.card{
+    background-color: #FFC107;
+    color: black;
+    margin-bottom: 15px;
+}
+.card-corpo{
+    background-color: #333;
+    color: #FFF;
+    border-radius: 5px;
+}
+.btn{
+    background-color: black;
+    font-family: JetBrains Mono;
+    color: white;
+}

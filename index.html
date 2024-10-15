@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">   
+    <link rel="stylesheet" href="./css/stilo1.css">
+    <title>Página inicial</title>
+</head>
+<body>
+  <header class="header-menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="" id="fontenav">
+          <img src="./img/1.png" alt="Logo" width="50" height="50" class="d-inline-block align-text">
+          CraftersValue
+        </a>
+        <button class="btn" type="button" id="botaonav" data-bs-toggle="modal" data-bs-target="#loginModal">Experimente!</button>
+      </div>
+    </nav>
+    <section class="home d-flex align-items-center h-75" id="home">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="col-xl-4">
+            <h1 class="text-black text-align-center">Seja Bem Vindo ao CraftersValue</h1>
+            <div id="linha"></div>
+            <p class="text-black">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI.</p>
+          </div>
+          <div class="col-xl-8 d-flex justify-content-end">
+            <img src="./img/nyan-cat.gif" width="470" height="450" class="img-fluid" alt="gif" id="gif">
+          </div>
+        </div>
+      </div>
+  </header>
+  <main class="container-main">
+    <section class="mb-5 pb-5" id="projects">
+      <div class="container">
+        <h2 class="text-center pt-5 pb-3">Descrição do App</h2>
+        <p class="d-flex mx-auto text-center w-75 mb-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <button class="btn d-flex mx-auto justify-content-center" id="butao" data-bs-toggle="modal" data-bs-target="#loginModal">Experimente!</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="row pb-5 pt-4">
+        <div class="col-xl-4">
+          <h4 class="text-center">entre em contato</h4>
+          <div class="phones d-flex flex-column">
+            <span class="text-center mt-4 mb-3"><i class="bi bi-whatsapp"></i>(55)9912939585</span>
+            <span class="text-center"><i class="bi bi-telefone"></i>(55)998476539585</span>
+          </div>
+    
+        </div>
+        <div class="col-xl-4 d-flex justify-content-center">
+          <figure class="d-flex flex-column align-items-center">
+            <img src="./img/1.png" width="75" height="75" alt="logo">
+            <figcaption class="text-center lp-2 fw-semibold">CraftersValue</figcaption>
+          </figure>
+        </div>
+        <div class="col-xl-4">
+          <h4 class="text-center">redes sociais</h4>
+          <div class="d-flex flex-column align-items-center">
+            <span class="text-center my-3"><i class="bi bi-facebook me-1"></i>facebook</span>
+            <span class="text-center mb-3"><i class="bi bi-instagram me-1"></i>instagram</span>
+          </div>
+          
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 d-flex pb-2">
+          <span class=" mx-auto">Instituto Federal Farroupilha | &copy; copyryght 2024</span>
+      
+        </div>
+    </div>
+  </footer>
+
+ <!-- Modal de Login -->
+<div class="modal" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="fechar()">X</button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label for="email" class="form-label">Usuário:</label>
+            <input type="email" class="form-control input-custom" id="email" placeholder="Insira seu Email">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Senha:</label>
+            <input type="password" class="form-control input-custom" id="senha" placeholder="Insira sua Senha">
+          </div>
+          <button type="button" class="btn btn-login mt-3" id="botaoLogin" onclick="fazerLogin()">Login</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center mt-2">Não possui uma conta? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Cadastre-se</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal de Cadastro -->
+<div class="modal" id="registerModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cadastro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"  onclick="fechar()">X</button>
+      </div>
+      <div class="modal-body">
+        <form id="registerForm">
+          <div class="mb-3">
+            <label for="registerEmail" class="form-label" id="email2">Usuário:</label>
+            <input type="email" class="form-control input-custom" id="registerEmail" placeholder="Insira seu Email">
+          </div>
+          <div class="mb-3">
+            <label for="registerPassword" class="form-label" id="senha2">Senha:</label>
+            <input type="password" class="form-control input-custom" id="registerPassword" placeholder="Insira sua Senha">
+          </div>
+          <div class="mb-3">
+            <label for="registerConfirmPassword" class="form-label" id="senhaC">Confirmação de Senha:</label>
+            <input type="password" class="form-control input-custom" id="registerConfirmPassword" placeholder="Insira sua Senha Novamente">
+          </div>
+        </form>
+        <button type="button" class="btn btn-login mt-3" onclick="fazerCadastro()">Cadastrar</button>
+      </div>
+      <div class="modal-footer">
+        <p class="text-center mt-2">Já possui uma conta? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Faça Login</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

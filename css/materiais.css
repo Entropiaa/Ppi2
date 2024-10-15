@@ -1,0 +1,28 @@
+body{
+    font-family: JetBrains Mono;
+    margin: 0;
+}
+#navbar{
+    background-color: #ffd502;
+}
+#contact{
+    background-color: #ffd502;
+    color: black;
+}
+.cartao-material {
+    background-color: #FFC107;
+    color: black;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.corpo-cartao-material {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.imagem-material {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin-right: 20px;
+}

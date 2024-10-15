@@ -1,0 +1,42 @@
+body{
+    font-family: JetBrains Mono;
+    margin: 0;
+}
+#navbar{
+    background-color: #ffd502;
+}
+#contact{
+    background-color: #ffd502;
+    color: black;
+}
+
+.altura-total {
+    height: 95vh;
+}
+
+.botao-grande {
+    background-color: #FFD700;
+    color: black;
+    width: 350px;
+    height: 100px;
+    font-size: 1.5rem;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;   
+    text-align: center; 
+}
+
+.imagem-redonda {
+    width: 500px;
+    height: 480px;
+}
+
+.link-sem-underline {
+    text-decoration: none;
+}
+
+#botaonav{
+    background-color: black;
+    font-family: JetBrains Mono;
+    color: white;
+}
