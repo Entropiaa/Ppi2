@@ -25,6 +25,10 @@ body{
     align-items: center;   
     text-align: center; 
 }
+.botao-grande:hover {
+    background-color: black;
+    color: white;
+}
 
 .imagem-redonda {
     width: 500px;
