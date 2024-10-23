@@ -1,0 +1,118 @@
+body{
+    font-family: JetBrains Mono;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#fontenav{
+    font-family: JetBrains Mono NL;
+}
+#botaonav{
+    background-color: black;
+    font-family: JetBrains Mono;
+    color: white;
+}
+.header-menu{
+    background-color: #ffd502;
+    height: 80vh;
+}
+#linha{
+    background-color: black;
+    height: 5px;
+    width: 100px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+#butao{
+    background-color: #ffd502;
+    color: black;
+}
+#contact{
+    background-color: #ffd502;
+    color: black;
+}
+#gif{
+  border-radius: 20px;
+}
+
+
+
+.modal-content {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: none;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .btn-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+  
+  
+  .input-custom {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .input-custom::placeholder {
+    color: #d3d3d3;
+    font-style: italic;
+  }
+  
+  .btn-login {
+    background-color: #ffd700;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px 30px;
+    border: none;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn-login:hover {
+    background-color: #e0c200;
+  }
+  
+  .modal-footer {
+    border-top: none;
+    text-align: center;
+  }
+  
+  .modal-footer a {
+    color: #000;
+    font-weight: bold;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
