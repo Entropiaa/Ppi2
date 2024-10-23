@@ -1,0 +1,31 @@
+body {
+    font-family: JetBrains Mono;
+    margin: 0;
+}
+
+#navbar {
+    font-family: JetBrains Mono;
+    background-color: #ffd502;
+}
+
+#contact {
+    background-color: #ffd502;
+    color: black;
+}
+
+.fundo-amarelo {
+    background-color: #FFD700;
+}
+
+.caixa-formulario {
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.formulario-label {
+    font-weight: bold;
+}
+
+#iconeDinheiro{
+    height: 70px;
+}

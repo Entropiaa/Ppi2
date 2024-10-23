@@ -24,26 +24,24 @@ function login() {
   }
   
 
+  document.getElementById('senha').addEventListener('keyup', (event) => {
+    if(event.key === "Enter") {
+        fazerLogin(event);  
+    }
+});
 
-  function fazerLogin(){
+function fazerLogin(event) {
     event.preventDefault();
     var email = document.getElementById("email").value;
     var senha = document.getElementById("senha").value;
 
-    if(email === "usuario@gmail.com" && senha === "123"){
-        localStorage.setItem("logado","true");
-
+    if(email === "usuario@gmail.com" && senha === "123") {
+        localStorage.setItem("logado", "true");
         window.location.href = "telaInicial.html";
-
+    } else {
+        alert("Usuário não encontrado");
     }
-    else{
-        alert("usuario não Encontrado")
-    }
-  
-    document.getElementById('botaoLogin').addEventListener('keyup', (event) =>{
-    if(event.key=="Enter")
-          fazerLogin();});
-  }
+}
 
 
   function fazerCadastro(){
