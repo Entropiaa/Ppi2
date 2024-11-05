@@ -1,0 +1,42 @@
+body {
+    font-family: 'JetBrains Mono', monospace;
+    margin: 0;
+}
+#navbar{
+    background-color: #ffd502;
+}
+#contact{
+    background-color: #ffd502;
+    color: black;
+}
+
+.titulo {
+    background-color: #FFDD00;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+    width: auto; /* Largura ajustada ao conteúdo */
+}
+
+.botao-orcamento {
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%;
+}
+
+.botao-novo-orcamento {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.botao-novo-orcamento:hover {
+    background-color: #FFDD00;
+    color: rgb(0, 0, 0);
+}
