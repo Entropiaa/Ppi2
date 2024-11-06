@@ -36,26 +36,43 @@
       <h2 class="title">Guia Para Auxiliar<br>Na Precificação</h2>
     </div>
 
-    <div class="right-section">
+      <div class="right-section">
       <div class="form-group">
-        <input type="text" id="cliente" placeholder="Cliente">
+        <input type="text" id="cliente" placeholder="Cliente" style="border: 2px solid black;">
       </div>
 
-      <h3>Cálculo para valor da hora Trabalhada:</h3>
+      <h3>Calculo para valor da hora Trabalhada:</h3>
 
-      <div class="form-group">
-        <input type="number" id="custoFixo" placeholder="Custos Fixos Mensais (R$)">
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="custoFixo" placeholder="Custos Fixos Mensais (R$)"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="custoFixo()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
       </div>
 
-      <div class="form-group">
-        <input type="number" id="custoVariavel" placeholder="Custos Variáveis Mensais (R$)">
-      </div>
-      <div class="form-group">
-        <input type="number" id="salarioDesejado" placeholder="Salário Desejado (R$)">
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="custoVariavel" placeholder="Custos Variáveis Mensais (R$)"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="custoVariavel()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
       </div>
 
-      <div class="form-group">
-        <input type="number" id="horasTrabalhadas" placeholder="Horas trabalhadas por Mês">
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="salarioDesejado" placeholder="Salário Desejado (R$)"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="salarioDesejado()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
+      </div>
+
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="horasTrabalhadas" placeholder="Horas trabalhadas por Mês"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="horasTrabalhadas()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
       </div>
 
       <button>Calcular Valor da Hora</button>
@@ -63,27 +80,37 @@
 
       <div class="separator"></div>
 
-      <h3>Cálcular Preço do Produto:</h3>
+      <h3>Calcular Preço do Produto:</h3>
 
-      <div class="form-group">
-        <input type="number" id="custoProducao" placeholder="Custo de Produção (R$)">
+
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="custoProducao" placeholder="Custo de Produção (R$)"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="custoProducao()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
+      </div>
+
+      <div class="form-group" style="display: inline-block; width: 100%;">
+        <input type="number" id="tempoProducao" placeholder="Tempo de Produção"
+          style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
+        <button onclick="tempoProducao()"
+          style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
+          class="btn btn-light">?</button>
       </div>
 
       <div class="form-group">
-        <input type="number" id="tempoProducao" placeholder="Tempo de Produção">
-      </div>
-      <div class="form-group">
-        <input type="text" id="obs" placeholder="Observaçoes">
+        <input type="text" id="obs" placeholder="Observaçoes" style="border: 2px solid black;">
       </div>
 
       <button>Calcular Preço do Produto</button>
       <div class="container d-flex flex-column justify-content-end align-items-end">
         <a href="calculadora.html" id="botao-novo-orcamento" class=" btn mt-4 px-4 py-2">
-            Gerar Orçamento
+          Gerar Orçamento
         </a>
-    </div>  
+      </div>
     </div>
-    </div>
+  </div>
   </div>
   <br>
   <br>
@@ -91,40 +118,46 @@
   <br>
   <footer class="footer" id="contact">
     <div class="container">
-        <div class="row pb-5 pt-4">
-            <div class="col-xl-4">
-                <h4 class="text-center">entre em contato</h4>
-                <div class="phones d-flex flex-column">
-                    <span class="text-center mt-4 mb-3"><i class="bi bi-whatsapp"></i>(55)9912939585</span>
-                    <span class="text-center"><i class="bi bi-telefone"></i>(55)998476539585</span>
-                </div>
+      <div class="row pb-5 pt-4">
+        <div class="col-xl-4">
+          <h4 class="text-center">entre em contato</h4>
+          <div class="phones d-flex flex-column">
+            <span class="text-center mt-4 mb-3"><i class="bi bi-whatsapp"></i>(55)9912939585</span>
+            <span class="text-center"><i class="bi bi-telephone"></i>(55)998476539585</span>
+          </div>
 
-            </div>
-            <div class="col-xl-4 d-flex justify-content-center">
-                <figure class="d-flex flex-column align-items-center">
-                    <img src="./img/1.png" width="75" height="75" alt="logo">
-                    <figcaption class="text-center lp-2 fw-semibold">CraftersValue</figcaption>
-                </figure>
-            </div>
-            <div class="col-xl-4">
-                <h4 class="text-center">redes sociais</h4>
-                <div class="d-flex flex-column align-items-center">
-                    <span class="text-center my-3"><i class="bi bi-facebook me-1"></i>facebook</span>
-                    <span class="text-center mb-3"><i class="bi bi-instagram me-1"></i>instagram</span>
-                </div>
-
-            </div>
         </div>
-        <div class="row">
-            <div class="col-xl-12 d-flex pb-2">
-                <span class=" mx-auto">Instituto Federal Farroupilha | &copy; copyryght 2024</span>
-
-            </div>
+        <div class="col-xl-4 d-flex justify-content-center">
+          <figure class="d-flex flex-column align-items-center">
+            <img src="./img/1.png" width="75" height="75" alt="logo">
+            <figcaption class="text-center lp-2 fw-semibold">CraftersValue</figcaption>
+          </figure>
         </div>
-</footer>
+        <div class="col-xl-4">
+          <h4 class="text-center">redes sociais</h4>
+          <div class="d-flex flex-column align-items-center">
+            <span class="text-center my-3"><i class="bi bi-facebook me-1"></i>facebook</span>
+            <span class="text-center mb-3"><i class="bi bi-instagram me-1"></i>instagram</span>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-12 d-flex pb-2">
+          <span class=" mx-auto">Instituto Federal Farroupilha | &copy; copyryght 2024</span>
+
+        </div>
+      </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="./js/calculadora.js"></script>
+
+
+
 </body>
+
 
 </html>
