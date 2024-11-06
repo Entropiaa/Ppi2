@@ -13,19 +13,99 @@ body {
     color: black;
 }
 
-.fundo-amarelo {
-    background-color: #FFD700;
+.header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.caixa-formulario {
-    border-radius: 8px;
-    padding: 20px;
-}
-
-.formulario-label {
+.logo {
+    font-size: 24px;
     font-weight: bold;
 }
 
-#iconeDinheiro{
-    height: 70px;
+#idd {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 2;
+    background-color: #FFD700;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.icon-wrapper {
+    margin-top: 250px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result {
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.separator {
+    border-top: 5px solid #000000;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+#botao-novo-orcamento {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+}
+#botao-novo-orcamento:hover {
+    background-color: #FFDD00;
+    color: rgb(0, 0, 0);
 }
