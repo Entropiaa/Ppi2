@@ -1,12 +1,18 @@
+:root {
+    --primary-color: #ffd502;
+    --secondary-color: #FFD700;
+    --font-family: 'JetBrains Mono', monospace;
+  }
+  
 body {
-    font-family: JetBrains Mono;
+    font-family:  'JetBrains Mono';
     margin: 0;
-}
-
+  }
+  
 #navbar {
-    font-family: JetBrains Mono;
     background-color: #ffd502;
-}
+    font-family:  'JetBrains Mono';
+  }
 
 #contact {
     background-color: #ffd502;
@@ -30,6 +36,11 @@ body {
     margin: 0 auto;
     display: flex;
     gap: 40px;
+}
+
+@media (max-width: 767px) {
+    #idd {
+      flex-direction: column;}
 }
 
 .left-section {
@@ -108,4 +119,5 @@ button:hover {
 #botao-novo-orcamento:hover {
     background-color: #FFDD00;
     color: rgb(0, 0, 0);
+    border: 2px solid black;
 }

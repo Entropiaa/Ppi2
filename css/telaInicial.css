@@ -25,6 +25,9 @@ body{
     background-color: black;
     color: white;
 }
+.botao-grande:hover img {
+    filter: invert(1);
+}
 
 .imagem-redonda {
     width: 500px;
