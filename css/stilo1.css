@@ -1,118 +1,196 @@
-body{
-    font-family: JetBrains Mono;
-    margin: 0;
+body {
+  font-family: JetBrains Mono;
+  margin: 0;
 }
-html{
-    scroll-behavior: smooth;
+
+html {
+  scroll-behavior: smooth;
 }
-#fontenav{
-    font-family: JetBrains Mono NL;
+
+#fontenav {
+  font-family: JetBrains Mono NL;
 }
-#botaonav{
-    background-color: black;
-    font-family: JetBrains Mono;
-    color: white;
+
+#botaonav {
+  background-color: black;
+  font-family: JetBrains Mono;
+  color: white;
 }
-.header-menu{
-    background-color: #ffd502;
-    height: 80vh;
+
+.header-menu {
+  background-color: #ffd502;
+  height: 80vh;
 }
-#linha{
-    background-color: black;
-    height: 5px;
-    width: 100px;
-    border-radius: 10px;
-    margin-bottom: 5px;
+
+#linha {
+  background-color: black;
+  height: 5px;
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
-#butao{
-    background-color: #ffd502;
-    color: black;
+
+#butao {
+  background-color: #ffd502;
+  color: black;
 }
-#contact{
-    background-color: #ffd502;
-    color: black;
+
+#contact {
+  background-color: #ffd502;
+  color: black;
 }
-#gif{
+
+#gif {
   border-radius: 20px;
+  width: 100%;
+  max-width: 470px;
 }
-
-
 
 .modal-content {
-    border-radius: 10px;
-    padding: 20px;
-  }
-  
-  .modal-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: none;
-  }
-  
-  .modal-title {
-    font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .btn-close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
+  border-radius: 10px;
+  padding: 20px;
 }
 
-  
-  
-  .input-custom {
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    font-size: 14px;
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.btn-close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.input-custom {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.input-custom::placeholder {
+  color: #d3d3d3;
+  font-style: italic;
+}
+
+.btn-login {
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 10px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-login:hover {
+  background-color: #e0c200;
+}
+
+.modal-footer {
+  border-top: none;
+  text-align: center;
+}
+
+.modal-footer a {
+  color: #000;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header-menu {
+      height: auto;
+      padding: 20px 0;
   }
-  
-  .input-custom::placeholder {
-    color: #d3d3d3;
-    font-style: italic;
+
+  #botaonav {
+      font-size: 1rem;
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
   }
-  
+
+  .home h1 {
+      font-size: 1.5rem;
+  }
+
+  .home p {
+      font-size: 1rem;
+  }
+
+  #gif {
+      width: 80%;
+      max-width: 350px;
+      margin: 20px 0;
+  }
+
+  .container {
+      padding: 0;
+  }
+
+  .col-xl-4, .col-xl-8 {
+      text-align: center;
+  }
+
+  .btn {
+      width: 100%;
+  }
+
+  #projects h2 {
+      font-size: 1.5rem;
+  }
+
+  #projects p {
+      font-size: 1rem;
+      max-width: 90%;
+      margin: 0 auto;
+  }
+
+  .col-md-6 img {
+      width: 80%;
+      max-width: 400px;
+      border-radius: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-menu {
+      height: auto;
+  }
+
+  .modal-title {
+      font-size: 1.5rem;
+  }
+
   .btn-login {
-    background-color: #ffd700;
-    color: #000;
-    border-radius: 10px;
-    padding: 10px 30px;
-    border: none;
-    font-size: 18px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      padding: 8px 20px;
+      font-size: 16px;
   }
-  
-  .btn-login:hover {
-    background-color: #e0c200;
+
+  #gif {
+      width: 90%;
+      max-width: 300px;
   }
-  
-  .modal-footer {
-    border-top: none;
-    text-align: center;
+
+  .input-custom {
+      font-size: 12px;
+      padding: 8px;
   }
-  
-  .modal-footer a {
-    color: #000;
-    font-weight: bold;
+
+  .btn-login {
+      width: 100%;
   }
-  
-
-
-
-
-
-
-
-
-
-
-
-
+}
