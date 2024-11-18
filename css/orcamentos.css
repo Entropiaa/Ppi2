@@ -1,42 +1,66 @@
 body {
     font-family: 'JetBrains Mono', monospace;
     margin: 0;
+    background-color: #f9f9f9; /* Fundo neutro e claro */
 }
-#navbar{
+
+#navbar {
     background-color: #ffd502;
 }
-#contact{
+
+#contact {
     background-color: #ffd502;
     color: black;
+    padding: 20px 0; /* Melhor espaçamento */
 }
 
 .titulo {
     background-color: #FFDD00;
-    font-size: 18px;
+    font-size: 22px; /* Maior destaque */
     font-weight: bold;
-    padding: 15px;
+    padding: 15px 20px; /* Melhor espaçamento interno */
     border-radius: 8px;
-    width: auto; /* Largura ajustada ao conteúdo */
+    display: inline-block;
+    color: #333; /* Texto em cinza escuro */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra leve */
 }
 
 .botao-orcamento {
-    background-color: #000;
-    color: #fff;
+    background-color: #e0e0e0; /* Cinza claro */
+    color: #444; /* Cinza médio para texto */
     text-decoration: none;
     padding: 20px;
     border-radius: 8px;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Maior espaçamento entre os botões */
     display: inline-block;
     width: 100%;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave */
+}
+
+.botao-orcamento:hover {
+    background-color: #FFDD00;
+    color: #333; /* Cinza escuro para destaque */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
 }
 
 .botao-novo-orcamento {
-    background-color: #000;
-    color: #fff;
+    background-color: #e0e0e0; /* Cinza claro */
+    color: #444; /* Texto em cinza médio */
     border-radius: 20px;
     font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .botao-novo-orcamento:hover {
     background-color: #FFDD00;
-    color: rgb(0, 0, 0);
+    color: #333; /* Cinza escuro para contraste */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    background-color: #ffd502;
+    border-top: 1px solid #ccc;
 }

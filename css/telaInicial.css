@@ -1,11 +1,13 @@
-body{
-    font-family: JetBrains Mono;
+body {
+    font-family: "JetBrains Mono";
     margin: 0;
 }
-#navbar{
+
+#navbar {
     background-color: #ffd502;
 }
-#contact{
+
+#contact {
     background-color: #ffd502;
     color: black;
 }
@@ -16,15 +18,21 @@ body{
     width: 350px;
     height: 100px;
     font-size: 1.5rem;
-    display: flex;           
-    justify-content: center; 
-    align-items: center;   
-    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    min-width: 250px; 
+    padding: 0 15px; 
+    word-wrap: break-word; 
 }
+
 .botao-grande:hover {
     background-color: black;
     color: white;
 }
+
 .botao-grande:hover img {
     filter: invert(1);
 }
@@ -32,14 +40,73 @@ body{
 .imagem-redonda {
     width: 500px;
     height: 480px;
+    border-radius: 50%;
 }
 
 .link-sem-underline {
     text-decoration: none;
 }
 
-#botaonav{
+#botaonav {
     background-color: black;
-    font-family: JetBrains Mono;
+    font-family: "JetBrains Mono";
     color: white;
+    border: none;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #botaonav {
+        font-size: 1em;
+        padding: 10px 15px;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .botao-grande {
+        width: 100%;
+        height: auto;
+        font-size: 1.2rem;
+        padding: 15px;
+        margin-bottom: 15px;
+        min-width: 100%; 
+    }
+
+    .imagem-redonda {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .col-md-6 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .botao-grande {
+        font-size: 1rem;
+        padding: 10px;
+        width: 100%;
+        height: auto; /* Ajuste a altura para que o texto não saia do botão */
+        min-width: 100%; 
+    }
+
+    .imagem-redonda {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .footer h4, .footer span {
+        font-size: 1em;
+    }
+
+    .footer .phones, .footer .social-icons {
+        text-align: center;
+    }
+
+    .footer span i {
+        margin-right: 5px;
+    }
 }

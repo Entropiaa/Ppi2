@@ -38,29 +38,31 @@
 
       <div class="right-section">
       <div class="form-group">
-        <input type="text" id="cliente" placeholder="Cliente" style="border: 2px solid black;">
       </div>
 
-      <h3>Calculo para valor da hora Trabalhada:</h3>
+      <h3>Cálculo para valor da hora Trabalhada:</h3>
 
       <div class="form-group" style="display: inline-block; width: 100%;">
-        <input type="number" id="custoFixo" placeholder="Custos Fixos Mensais (R$)"
+        <p class="titlee"><strong>Custos Fixos Mensais (R$):</strong></p>
+        <input type="number" id="custoFixo" placeholder="Custos Fixos Mensais (R$)" step="0.01" min="0"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
-        <button onclick="custoFixo()"
+        <button onclick="custoFix()"
           style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
           class="btn btn-light">?</button>
       </div>
 
       <div class="form-group" style="display: inline-block; width: 100%;">
-        <input type="number" id="custoVariavel" placeholder="Custos Variáveis Mensais (R$)"
+        <p class="titlee"><strong>Custos Variáveis Mensais (R$):</strong></p>
+        <input type="number" id="custoVariavel" placeholder="Custos Variáveis Mensais (R$)"step="0.01" min="0"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
-        <button onclick="custoVariavel()"
+        <button onclick="custoVariaveel()"
           style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
           class="btn btn-light">?</button>
       </div>
 
       <div class="form-group" style="display: inline-block; width: 100%;">
-        <input type="number" id="salarioDesejado" placeholder="Salário Desejado (R$)"
+        <p class="titlee"><strong>Salário Desejado (R$):</strong></p>
+        <input type="number" id="salarioDesejado" placeholder="Salário Desejado (R$)" step="0.01" min="0"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
         <button onclick="salarioDesejado()"
           style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
@@ -68,6 +70,7 @@
       </div>
 
       <div class="form-group" style="display: inline-block; width: 100%;">
+        <p class="titlee"><strong>Horas trabalhadas por Mês:</strong></p>
         <input type="number" id="horasTrabalhadas" placeholder="Horas trabalhadas por Mês"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
         <button onclick="horasTrabalhadas()"
@@ -75,38 +78,52 @@
           class="btn btn-light">?</button>
       </div>
 
-      <button>Calcular Valor da Hora</button>
+     
       <br>
+        <button id="ValorDaHoraBtn" onclick="calcular()" class="buttonPrincipal"><strong>Calcular Valor da Hora</strong></button>
+        <p class="titlee" id="espacamento"><strong>Seu valor:</strong></p>
+
+        <div class="exibirValor">
+          <p class="textoExibir" id="precoHora" >R$00</p>
+        </div>
+        
+     
 
       <div class="separator"></div>
 
       <h3>Calcular Preço do Produto:</h3>
+      
 
 
       <div class="form-group" style="display: inline-block; width: 100%;">
+        <p class="titlee"><strong>Custo de Produção:</strong></p>
         <input type="number" id="custoProducao" placeholder="Custo de Produção (R$)"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
-        <button onclick="custoProducao()"
+        <button onclick="custoProducaoo()"
           style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
           class="btn btn-light">?</button>
       </div>
 
       <div class="form-group" style="display: inline-block; width: 100%;">
+        <p class="titlee"><strong>Tempo de Produção:</strong></p>
         <input type="number" id="tempoProducao" placeholder="Tempo de Produção"
           style="border: 2px solid black;display: inline-block; width: 85%; margin-right: 20px;">
-        <button onclick="tempoProducao()"
+        <button onclick="timeProducao()"
           style="width: 45px; height: 45px; border-radius: 70px; font-size: 20px; font-weight: 600; display: inline-block;"
           class="btn btn-light">?</button>
       </div>
 
-      <div class="form-group">
-        <input type="text" id="obs" placeholder="Observaçoes" style="border: 2px solid black;">
-      </div>
+    
 
-      <button>Calcular Preço do Produto</button>
+      <button class="buttonPrincipal" onclick="calcular()"><strong>Calcular Preço do Produto</strong></button>
+      <p class="titlee" id="espacamento"><strong>Seu valor:</strong></p>
+
+        <div class="exibirValor">
+          <p class="textoExibir" id="precoProduto" >R$00</p>
+        </div>
       <div class="container d-flex flex-column justify-content-end align-items-end">
-        <a href="calculadora.html" id="botao-novo-orcamento" class=" btn mt-4 px-4 py-2">
-          Gerar Orçamento
+        <a href="template.html" id="botao-novo-orcamento" class=" btn mt-4 px-4 py-2">
+          Criar orçammento
         </a>
       </div>
     </div>

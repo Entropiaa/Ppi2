@@ -86,10 +86,45 @@ button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    margin-bottom: 15px;
+
 }
+
+.buttonPrincipal {
+    width: 40%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+
+
+.textoExibir{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 14px;
+    
+}
+.exibirValor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 30px;
+    padding: 1px;
+    background-color: hsl(0, 0%, 100%);
+    border: 2px solid hsl(0, 0%, 0%);
+    border-radius: 6px;
+}
+
+#espacamento{
+    margin-top: 10px;
+}
+
 
 button:hover {
     background-color: #45a049;
@@ -121,3 +156,7 @@ button:hover {
     color: rgb(0, 0, 0);
     border: 2px solid black;
 }
+    .titlee{
+        margin-bottom: 0;
+    }
+
